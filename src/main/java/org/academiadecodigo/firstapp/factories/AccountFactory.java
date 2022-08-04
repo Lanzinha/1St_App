@@ -1,10 +1,10 @@
-package org.academiadecodigo.javabank.factories;
+package org.academiadecodigo.firstapp.factories;
 
-import org.academiadecodigo.javabank.errors.ErrorMessage;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.persistence.model.account.AccountType;
-import org.academiadecodigo.javabank.persistence.model.account.CheckingAccount;
-import org.academiadecodigo.javabank.persistence.model.account.SavingsAccount;
+import org.academiadecodigo.firstapp.errors.ErrorMessage;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.account.AccountType;
+import org.academiadecodigo.firstapp.persistence.model.account.CheckingAccount;
+import org.academiadecodigo.firstapp.persistence.model.account.SavingsAccount;
 import org.springframework.stereotype.Component;
 
 /**

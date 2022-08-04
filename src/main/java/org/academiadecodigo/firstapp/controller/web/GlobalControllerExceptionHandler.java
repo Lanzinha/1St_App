@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.controller.web;
+package org.academiadecodigo.firstapp.controller.web;
 
-import org.academiadecodigo.javabank.exceptions.JavaBankException;
+import org.academiadecodigo.firstapp.exceptions.JavaBankException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;

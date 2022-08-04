@@ -1,14 +1,13 @@
-package org.academiadecodigo.javabank.controller.rest;
+package org.academiadecodigo.firstapp.controller.rest;
 
-import org.academiadecodigo.javabank.command.RecipientDto;
-import org.academiadecodigo.javabank.converters.RecipientDtoToRecipient;
-import org.academiadecodigo.javabank.converters.RecipientToRecipientDto;
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.RecipientNotFoundException;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.services.CustomerService;
-import org.academiadecodigo.javabank.services.RecipientService;
+import org.academiadecodigo.firstapp.command.RecipientDto;
+import org.academiadecodigo.firstapp.converters.RecipientDtoToRecipient;
+import org.academiadecodigo.firstapp.converters.RecipientToRecipientDto;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.RecipientNotFoundException;
+import org.academiadecodigo.firstapp.services.CustomerService;
+import org.academiadecodigo.firstapp.services.RecipientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,6 @@ import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

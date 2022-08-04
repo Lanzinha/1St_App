@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.command;
+package org.academiadecodigo.firstapp.command;
 
-import org.academiadecodigo.javabank.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
 
 import javax.validation.constraints.*;
 

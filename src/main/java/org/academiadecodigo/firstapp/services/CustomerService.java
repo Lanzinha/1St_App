@@ -1,9 +1,8 @@
-package org.academiadecodigo.javabank.services;
+package org.academiadecodigo.firstapp.services;
 
-import org.academiadecodigo.javabank.exceptions.*;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.persistence.model.Account;
+import org.academiadecodigo.firstapp.exceptions.*;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
 
 import java.util.List;
 

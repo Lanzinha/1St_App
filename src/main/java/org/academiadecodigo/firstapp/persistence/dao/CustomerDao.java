@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.persistence.dao;
+package org.academiadecodigo.firstapp.persistence.dao;
 
-import org.academiadecodigo.javabank.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
 
 /**
  * Common interface for customer data access objects

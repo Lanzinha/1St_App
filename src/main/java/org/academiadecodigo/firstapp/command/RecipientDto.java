@@ -1,6 +1,4 @@
-package org.academiadecodigo.javabank.command;
-
-import org.academiadecodigo.javabank.persistence.model.Recipient;
+package org.academiadecodigo.firstapp.command;
 
 import javax.validation.constraints.*;
 

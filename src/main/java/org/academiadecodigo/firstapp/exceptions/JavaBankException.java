@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.exceptions;
+package org.academiadecodigo.firstapp.exceptions;
 
 /**
  * A generic java bank exception to be used as base for concrete types of exceptions

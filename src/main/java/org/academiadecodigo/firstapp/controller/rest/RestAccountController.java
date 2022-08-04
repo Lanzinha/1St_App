@@ -1,15 +1,15 @@
-package org.academiadecodigo.javabank.controller.rest;
+package org.academiadecodigo.firstapp.controller.rest;
 
-import org.academiadecodigo.javabank.command.AccountDto;
-import org.academiadecodigo.javabank.converters.AccountDtoToAccount;
-import org.academiadecodigo.javabank.converters.AccountToAccountDto;
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.TransactionInvalidException;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.services.AccountService;
-import org.academiadecodigo.javabank.services.CustomerService;
+import org.academiadecodigo.firstapp.command.AccountDto;
+import org.academiadecodigo.firstapp.converters.AccountDtoToAccount;
+import org.academiadecodigo.firstapp.converters.AccountToAccountDto;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.services.AccountService;
+import org.academiadecodigo.firstapp.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
  */
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/customer")
+@RequestMapping("/api/user")
 public class RestAccountController {
 
     private CustomerService customerService;
@@ -82,7 +82,7 @@ public class RestAccountController {
      * @param cid the customer id
      * @return the response entity
      */
-    @RequestMapping(method = RequestMethod.GET, path = "/{cid}/account")
+    @RequestMapping(method = RequestMethod.GET, path = "/{cid}/addiction")
     public ResponseEntity<List<AccountDto>> listCustomerAccounts(@PathVariable Integer cid) {
 
         Customer customer = customerService.get(cid);
@@ -103,7 +103,7 @@ public class RestAccountController {
      * @param aid the account id
      * @return the response entity
      */
-    @RequestMapping(method = RequestMethod.GET, path = "/{cid}/account/{aid}")
+    @RequestMapping(method = RequestMethod.GET, path = "/{cid}/addiction/{aid}")
     public ResponseEntity<AccountDto> showCustomerAccount(@PathVariable Integer cid, @PathVariable Integer aid) {
 
         Account account = accountService.get(aid);
@@ -128,7 +128,7 @@ public class RestAccountController {
      * @param uriComponentsBuilder the uri components builder object
      * @return the response entity
      */
-    @RequestMapping(method = RequestMethod.POST, path = "/{cid}/account")
+    @RequestMapping(method = RequestMethod.POST, path = "/{cid}/addiction")
     public ResponseEntity<?> addAccount(@PathVariable Integer cid, @Valid @RequestBody AccountDto accountDto, BindingResult bindingResult, UriComponentsBuilder uriComponentsBuilder) {
 
         if (bindingResult.hasErrors() || accountDto.getId() != null) {
@@ -139,7 +139,7 @@ public class RestAccountController {
 
             Account account = customerService.addAccount(cid, accountDtoToAccount.convert(accountDto));
 
-            UriComponents uriComponents = uriComponentsBuilder.path("/api/customer/" + cid + "/account/" + account.getId()).build();
+            UriComponents uriComponents = uriComponentsBuilder.path("/api/user/" + cid + "/addiction/" + account.getId()).build();
             HttpHeaders headers = new HttpHeaders();
             headers.setLocation(uriComponents.toUri());
 
@@ -161,7 +161,7 @@ public class RestAccountController {
      * @param aid the accound id
      * @return the response entity
      */
-    @RequestMapping(method = RequestMethod.GET, path = "/{cid}/account/{aid}/close")
+    @RequestMapping(method = RequestMethod.GET, path = "/{cid}/addiction/{aid}/close")
     public ResponseEntity<?> closeAccount(@PathVariable Integer cid, @PathVariable Integer aid) {
 
         try {

@@ -1,7 +1,7 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
-import org.academiadecodigo.javabank.command.TransferDto;
-import org.academiadecodigo.javabank.domain.Transfer;
+import org.academiadecodigo.firstapp.command.TransferDto;
+import org.academiadecodigo.firstapp.domain.Transfer;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

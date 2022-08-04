@@ -1,8 +1,7 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
-import org.academiadecodigo.javabank.command.RecipientDto;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.services.RecipientService;
+import org.academiadecodigo.firstapp.command.RecipientDto;
+import org.academiadecodigo.firstapp.services.RecipientService;
 import org.junit.Before;
 import org.junit.Test;
 

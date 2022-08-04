@@ -1,13 +1,13 @@
-package org.academiadecodigo.javabank.controller.web;
+package org.academiadecodigo.firstapp.controller.web;
 
-import org.academiadecodigo.javabank.command.AccountDto;
-import org.academiadecodigo.javabank.command.CustomerDto;
-import org.academiadecodigo.javabank.converters.AccountToAccountDto;
-import org.academiadecodigo.javabank.converters.CustomerDtoToCustomer;
-import org.academiadecodigo.javabank.converters.CustomerToCustomerDto;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.services.CustomerService;
+import org.academiadecodigo.firstapp.command.AccountDto;
+import org.academiadecodigo.firstapp.command.CustomerDto;
+import org.academiadecodigo.firstapp.converters.AccountToAccountDto;
+import org.academiadecodigo.firstapp.converters.CustomerDtoToCustomer;
+import org.academiadecodigo.firstapp.converters.CustomerToCustomerDto;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.services.CustomerService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.*;

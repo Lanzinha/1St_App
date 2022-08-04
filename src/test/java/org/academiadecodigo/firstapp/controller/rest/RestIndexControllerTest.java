@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.controller.rest;
+package org.academiadecodigo.firstapp.controller.rest;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,11 +1,11 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
-import org.academiadecodigo.javabank.command.AccountDto;
-import org.academiadecodigo.javabank.factories.AccountFactory;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.persistence.model.account.AccountType;
-import org.academiadecodigo.javabank.persistence.model.account.CheckingAccount;
-import org.academiadecodigo.javabank.services.CustomerService;
+import org.academiadecodigo.firstapp.command.AccountDto;
+import org.academiadecodigo.firstapp.factories.AccountFactory;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.account.AccountType;
+import org.academiadecodigo.firstapp.persistence.model.account.CheckingAccount;
+import org.academiadecodigo.firstapp.services.CustomerService;
 import org.junit.Before;
 import org.junit.Test;
 

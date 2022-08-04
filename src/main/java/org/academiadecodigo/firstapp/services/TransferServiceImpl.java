@@ -1,14 +1,13 @@
-package org.academiadecodigo.javabank.services;
+package org.academiadecodigo.firstapp.services;
 
-import org.academiadecodigo.javabank.domain.Transfer;
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.TransactionInvalidException;
-import org.academiadecodigo.javabank.persistence.dao.AccountDao;
-import org.academiadecodigo.javabank.persistence.dao.CustomerDao;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.persistence.model.Account;
+import org.academiadecodigo.firstapp.domain.Transfer;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
+import org.academiadecodigo.firstapp.persistence.dao.AccountDao;
+import org.academiadecodigo.firstapp.persistence.dao.CustomerDao;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

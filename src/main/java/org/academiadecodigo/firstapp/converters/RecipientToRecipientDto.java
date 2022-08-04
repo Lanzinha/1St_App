@@ -1,7 +1,6 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
-import org.academiadecodigo.javabank.command.RecipientDto;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
+import org.academiadecodigo.firstapp.command.RecipientDto;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

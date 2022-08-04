@@ -1,6 +1,5 @@
-package org.academiadecodigo.javabank.controller.web;
+package org.academiadecodigo.firstapp.controller.web;
 
-import org.academiadecodigo.javabank.controller.web.MainController;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;

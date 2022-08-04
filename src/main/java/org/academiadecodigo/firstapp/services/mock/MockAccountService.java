@@ -1,13 +1,13 @@
-package org.academiadecodigo.javabank.services.mock;
+package org.academiadecodigo.firstapp.services.mock;
 
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.TransactionInvalidException;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.persistence.model.account.SavingsAccount;
-import org.academiadecodigo.javabank.services.AccountService;
-import org.academiadecodigo.javabank.services.CustomerService;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.account.SavingsAccount;
+import org.academiadecodigo.firstapp.services.AccountService;
+import org.academiadecodigo.firstapp.services.CustomerService;
 
 import java.util.Optional;
 

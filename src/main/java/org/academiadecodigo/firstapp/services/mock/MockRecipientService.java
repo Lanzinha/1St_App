@@ -1,7 +1,6 @@
-package org.academiadecodigo.javabank.services.mock;
+package org.academiadecodigo.firstapp.services.mock;
 
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.services.RecipientService;
+import org.academiadecodigo.firstapp.services.RecipientService;
 
 /**
  * A mock {@link RecipientService} implementation

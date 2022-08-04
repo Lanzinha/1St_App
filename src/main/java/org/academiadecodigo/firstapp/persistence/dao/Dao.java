@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.persistence.dao;
+package org.academiadecodigo.firstapp.persistence.dao;
 
-import org.academiadecodigo.javabank.persistence.model.Model;
+import org.academiadecodigo.firstapp.persistence.model.Model;
 
 import java.util.List;
 

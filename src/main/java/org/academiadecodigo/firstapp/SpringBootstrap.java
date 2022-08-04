@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank;
+package org.academiadecodigo.firstapp;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;

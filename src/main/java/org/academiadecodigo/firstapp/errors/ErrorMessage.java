@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.errors;
+package org.academiadecodigo.firstapp.errors;
 
 /**
  * Error messages to be used throughout the application

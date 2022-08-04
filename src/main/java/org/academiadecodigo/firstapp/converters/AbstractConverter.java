@@ -1,8 +1,7 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
 import org.springframework.core.convert.converter.Converter;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

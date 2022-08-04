@@ -1,8 +1,8 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
-import org.academiadecodigo.javabank.command.AccountDto;
-import org.academiadecodigo.javabank.factories.AccountFactory;
-import org.academiadecodigo.javabank.persistence.model.Account;
+import org.academiadecodigo.firstapp.command.AccountDto;
+import org.academiadecodigo.firstapp.factories.AccountFactory;
+import org.academiadecodigo.firstapp.persistence.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;

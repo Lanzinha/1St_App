@@ -1,14 +1,12 @@
-package org.academiadecodigo.javabank.services;
+package org.academiadecodigo.firstapp.services;
 
-import org.academiadecodigo.javabank.exceptions.*;
-import org.academiadecodigo.javabank.persistence.dao.AccountDao;
-import org.academiadecodigo.javabank.persistence.dao.CustomerDao;
-import org.academiadecodigo.javabank.persistence.dao.RecipientDao;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.persistence.model.account.CheckingAccount;
-import org.academiadecodigo.javabank.persistence.model.account.SavingsAccount;
+import org.academiadecodigo.firstapp.exceptions.*;
+import org.academiadecodigo.firstapp.persistence.dao.AccountDao;
+import org.academiadecodigo.firstapp.persistence.dao.CustomerDao;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.account.CheckingAccount;
+import org.academiadecodigo.firstapp.persistence.model.account.SavingsAccount;
 import org.junit.Before;
 import org.junit.Test;
 

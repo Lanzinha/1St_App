@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank;
+package org.academiadecodigo.firstapp;
 
 import org.apache.logging.log4j.web.Log4jServletContextListener;
 import org.apache.logging.log4j.web.Log4jWebSupport;

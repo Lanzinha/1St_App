@@ -1,16 +1,15 @@
-package org.academiadecodigo.javabank.controller.rest;
+package org.academiadecodigo.firstapp.controller.rest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.academiadecodigo.javabank.command.RecipientDto;
-import org.academiadecodigo.javabank.converters.RecipientDtoToRecipient;
-import org.academiadecodigo.javabank.converters.RecipientToRecipientDto;
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.RecipientNotFoundException;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.services.CustomerService;
-import org.academiadecodigo.javabank.services.RecipientService;
+import org.academiadecodigo.firstapp.command.RecipientDto;
+import org.academiadecodigo.firstapp.converters.RecipientDtoToRecipient;
+import org.academiadecodigo.firstapp.converters.RecipientToRecipientDto;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.RecipientNotFoundException;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.services.CustomerService;
+import org.academiadecodigo.firstapp.services.RecipientService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.*;

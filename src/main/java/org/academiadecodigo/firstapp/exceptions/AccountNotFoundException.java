@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.exceptions;
+package org.academiadecodigo.firstapp.exceptions;
 
-import org.academiadecodigo.javabank.errors.ErrorMessage;
+import org.academiadecodigo.firstapp.errors.ErrorMessage;
 
 /**
  * Thrown to indicate that the account was not found

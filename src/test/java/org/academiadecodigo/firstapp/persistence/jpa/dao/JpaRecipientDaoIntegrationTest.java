@@ -1,8 +1,6 @@
-package org.academiadecodigo.javabank.persistence.jpa.dao;
+package org.academiadecodigo.firstapp.persistence.jpa.dao;
 
-import org.academiadecodigo.javabank.persistence.dao.jpa.JpaRecipientDao;
-import org.academiadecodigo.javabank.persistence.jpa.JpaIntegrationTestHelper;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
+import org.academiadecodigo.firstapp.persistence.jpa.JpaIntegrationTestHelper;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.persistence.jpa;
+package org.academiadecodigo.firstapp.persistence.jpa;
 
 import org.junit.After;
 import org.junit.Before;

@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.domain;
+package org.academiadecodigo.firstapp.domain;
 
-import org.academiadecodigo.javabank.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.Account;
 
 /**
  * The transfer domain entity,

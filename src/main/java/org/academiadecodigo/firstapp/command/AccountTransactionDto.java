@@ -1,12 +1,12 @@
-package org.academiadecodigo.javabank.command;
+package org.academiadecodigo.firstapp.command;
 
-import org.academiadecodigo.javabank.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.Account;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
-import static org.academiadecodigo.javabank.command.AccountDto.moneyRegex;
+import static org.academiadecodigo.firstapp.command.AccountDto.moneyRegex;
 
 /**
  * The {@link Account} transactions data transfer object

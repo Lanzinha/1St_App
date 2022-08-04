@@ -1,15 +1,15 @@
-package org.academiadecodigo.javabank.controller.rest;
+package org.academiadecodigo.firstapp.controller.rest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.academiadecodigo.javabank.command.AccountTransactionDto;
-import org.academiadecodigo.javabank.command.TransferDto;
-import org.academiadecodigo.javabank.converters.TransferDtoToTransfer;
-import org.academiadecodigo.javabank.domain.Transfer;
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.TransactionInvalidException;
-import org.academiadecodigo.javabank.services.AccountService;
-import org.academiadecodigo.javabank.services.TransferService;
+import org.academiadecodigo.firstapp.command.AccountTransactionDto;
+import org.academiadecodigo.firstapp.command.TransferDto;
+import org.academiadecodigo.firstapp.converters.TransferDtoToTransfer;
+import org.academiadecodigo.firstapp.domain.Transfer;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
+import org.academiadecodigo.firstapp.services.AccountService;
+import org.academiadecodigo.firstapp.services.TransferService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.*;

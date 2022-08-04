@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.interceptor;
+package org.academiadecodigo.firstapp.interceptor;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

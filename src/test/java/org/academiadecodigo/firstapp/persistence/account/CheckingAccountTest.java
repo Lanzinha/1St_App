@@ -1,6 +1,6 @@
-package org.academiadecodigo.javabank.persistence.account;
+package org.academiadecodigo.firstapp.persistence.account;
 
-import org.academiadecodigo.javabank.persistence.model.account.CheckingAccount;
+import org.academiadecodigo.firstapp.persistence.model.account.CheckingAccount;
 import org.junit.Before;
 import org.junit.Test;
 

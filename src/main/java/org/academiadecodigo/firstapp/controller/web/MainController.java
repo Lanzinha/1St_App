@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.controller.web;
+package org.academiadecodigo.firstapp.controller.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

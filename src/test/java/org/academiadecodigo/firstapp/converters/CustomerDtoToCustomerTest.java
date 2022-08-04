@@ -1,8 +1,8 @@
-package org.academiadecodigo.javabank.converters;
+package org.academiadecodigo.firstapp.converters;
 
-import org.academiadecodigo.javabank.command.CustomerDto;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.services.CustomerService;
+import org.academiadecodigo.firstapp.command.CustomerDto;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.services.CustomerService;
 import org.junit.Before;
 import org.junit.Test;
 

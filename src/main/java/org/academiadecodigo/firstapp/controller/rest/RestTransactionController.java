@@ -1,15 +1,13 @@
-package org.academiadecodigo.javabank.controller.rest;
+package org.academiadecodigo.firstapp.controller.rest;
 
-import org.academiadecodigo.javabank.command.AccountTransactionDto;
-import org.academiadecodigo.javabank.command.TransferDto;
-import org.academiadecodigo.javabank.converters.TransferDtoToTransfer;
-import org.academiadecodigo.javabank.domain.Transfer;
-import org.academiadecodigo.javabank.exceptions.AccountNotFoundException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.TransactionInvalidException;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.services.AccountService;
-import org.academiadecodigo.javabank.services.TransferService;
+import org.academiadecodigo.firstapp.command.AccountTransactionDto;
+import org.academiadecodigo.firstapp.command.TransferDto;
+import org.academiadecodigo.firstapp.converters.TransferDtoToTransfer;
+import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
+import org.academiadecodigo.firstapp.services.AccountService;
+import org.academiadecodigo.firstapp.services.TransferService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

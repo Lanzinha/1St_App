@@ -1,8 +1,8 @@
-package org.academiadecodigo.javabank.factories;
+package org.academiadecodigo.firstapp.factories;
 
-import org.academiadecodigo.javabank.persistence.model.account.AccountType;
-import org.academiadecodigo.javabank.persistence.model.account.CheckingAccount;
-import org.academiadecodigo.javabank.persistence.model.account.SavingsAccount;
+import org.academiadecodigo.firstapp.persistence.model.account.AccountType;
+import org.academiadecodigo.firstapp.persistence.model.account.CheckingAccount;
+import org.academiadecodigo.firstapp.persistence.model.account.SavingsAccount;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

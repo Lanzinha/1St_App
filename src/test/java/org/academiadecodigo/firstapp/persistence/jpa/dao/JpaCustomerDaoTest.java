@@ -1,7 +1,7 @@
-package org.academiadecodigo.javabank.persistence.jpa.dao;
+package org.academiadecodigo.firstapp.persistence.jpa.dao;
 
-import org.academiadecodigo.javabank.persistence.dao.jpa.JpaCustomerDao;
-import org.academiadecodigo.javabank.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.dao.jpa.JpaCustomerDao;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
 import org.junit.Before;
 import org.junit.Test;
 

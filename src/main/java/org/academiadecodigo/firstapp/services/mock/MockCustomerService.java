@@ -1,14 +1,13 @@
-package org.academiadecodigo.javabank.services.mock;
+package org.academiadecodigo.firstapp.services.mock;
 
-import org.academiadecodigo.javabank.exceptions.AssociationExistsException;
-import org.academiadecodigo.javabank.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.javabank.exceptions.RecipientNotFoundException;
-import org.academiadecodigo.javabank.persistence.model.AbstractModel;
-import org.academiadecodigo.javabank.persistence.model.Customer;
-import org.academiadecodigo.javabank.persistence.model.Recipient;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.services.AccountService;
-import org.academiadecodigo.javabank.services.CustomerService;
+import org.academiadecodigo.firstapp.exceptions.AssociationExistsException;
+import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
+import org.academiadecodigo.firstapp.exceptions.RecipientNotFoundException;
+import org.academiadecodigo.firstapp.persistence.model.AbstractModel;
+import org.academiadecodigo.firstapp.persistence.model.Customer;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.services.AccountService;
+import org.academiadecodigo.firstapp.services.CustomerService;
 
 import java.util.*;
 import java.util.stream.Collectors;

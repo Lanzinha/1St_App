@@ -1,6 +1,4 @@
-package org.academiadecodigo.javabank.services;
-
-import org.academiadecodigo.javabank.persistence.model.Recipient;
+package org.academiadecodigo.firstapp.services;
 
 /**
  * Common interface for recipient services, provides a method to get the recipient

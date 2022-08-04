@@ -1,8 +1,8 @@
-package org.academiadecodigo.javabank.command;
+package org.academiadecodigo.firstapp.command;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import org.academiadecodigo.javabank.persistence.model.Account;
-import org.academiadecodigo.javabank.persistence.model.account.AccountType;
+import org.academiadecodigo.firstapp.persistence.model.Account;
+import org.academiadecodigo.firstapp.persistence.model.account.AccountType;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
