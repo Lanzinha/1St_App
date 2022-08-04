@@ -12,6 +12,7 @@ import java.util.List;
 public class Customer extends AbstractModel {
 
     private String name;
+    private String pass;
     //private String email;
     //private String phone;
 
