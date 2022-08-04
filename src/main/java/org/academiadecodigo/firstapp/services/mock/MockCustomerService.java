@@ -1,8 +1,6 @@
 package org.academiadecodigo.firstapp.services.mock;
 
 import org.academiadecodigo.firstapp.exceptions.AssociationExistsException;
-import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.firstapp.exceptions.RecipientNotFoundException;
 import org.academiadecodigo.firstapp.persistence.model.AbstractModel;
 import org.academiadecodigo.firstapp.persistence.model.Customer;
 import org.academiadecodigo.firstapp.persistence.model.Account;
@@ -36,19 +34,6 @@ public class MockCustomerService extends AbstractMockService<Customer> implement
         return modelMap.get(id);
     }
 
-    /**
-     * @see CustomerService#getBalance(Integer)
-     */
-    @Override
-    public double getBalance(Integer id) throws CustomerNotFoundException {
-
-        Customer customer = Optional.ofNullable(modelMap.get(id))
-                .orElseThrow(CustomerNotFoundException::new);
-
-        return customer.getAccounts().stream()
-                .mapToDouble(Account::getBalance)
-                .sum();
-    }
 
     /**
      * @see CustomerService#save(Customer)
@@ -85,64 +70,6 @@ public class MockCustomerService extends AbstractMockService<Customer> implement
     @Override
     public List<Customer> list() {
         return new ArrayList<>(modelMap.values());
-    }
-
-    /**
-     * @see CustomerService#listRecipients(Integer)
-     */
-    @Override
-    public List<Recipient> listRecipients(Integer id) throws CustomerNotFoundException {
-
-        return Optional.ofNullable(modelMap.get(id))
-                .orElseThrow(CustomerNotFoundException::new)
-                .getRecipients();
-    }
-
-    /**
-     * @see CustomerService#addRecipient(Integer, Recipient)
-     */
-    @Override
-    public Recipient addRecipient(Integer id, Recipient recipient) {
-
-        Customer customer = modelMap.get(id);
-
-        if (accountService.get(recipient.getAccountNumber()) == null ||
-                getAccountIds(customer).contains(recipient.getAccountNumber())) {
-            return null;
-        }
-
-        if (recipient.getId() == null) {
-            recipient.setId(getNextId());
-        }
-
-        customer.addRecipient(recipient);
-
-        return recipient;
-    }
-
-    /**
-     * @see CustomerService#removeRecipient(Integer, Integer)
-     */
-    @Override
-    public void removeRecipient(Integer id, Integer recipientId)
-            throws CustomerNotFoundException, RecipientNotFoundException {
-
-        Customer customer = Optional.ofNullable(modelMap.get(id))
-                .orElseThrow(CustomerNotFoundException::new);
-
-        Recipient recipient = null;
-
-        for (Recipient rcpt : customer.getRecipients()) {
-            if (rcpt.getId().equals(recipientId)) {
-                recipient = rcpt;
-            }
-        }
-
-        if (recipient == null) {
-            throw new RecipientNotFoundException();
-        }
-
-        customer.removeRecipient(recipient);
     }
 
     /**

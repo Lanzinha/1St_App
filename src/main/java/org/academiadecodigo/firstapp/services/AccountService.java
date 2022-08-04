@@ -18,25 +18,4 @@ public interface AccountService {
      */
     Account get(Integer id);
 
-    /**
-     * Performs an {@link Account} deposit
-     *
-     * @param id         the account id
-     * @param customerId the customer id
-     * @throws AccountNotFoundException
-     * @throws CustomerNotFoundException
-     */
-    void deposit(Integer id, Integer customerId, double amount)
-            throws AccountNotFoundException, CustomerNotFoundException, TransactionInvalidException;
-
-    /**
-     * Perform an {@link Account} withdrawal
-     *
-     * @param id         the account id
-     * @param customerId the customer id
-     * @throws AccountNotFoundException
-     * @throws CustomerNotFoundException
-     */
-    void withdraw(Integer id, Integer customerId, double amount)
-            throws AccountNotFoundException, CustomerNotFoundException, TransactionInvalidException;
 }

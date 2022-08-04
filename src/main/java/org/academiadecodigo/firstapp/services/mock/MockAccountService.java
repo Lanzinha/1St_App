@@ -1,11 +1,6 @@
 package org.academiadecodigo.firstapp.services.mock;
 
-import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
-import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
-import org.academiadecodigo.firstapp.persistence.model.Customer;
 import org.academiadecodigo.firstapp.persistence.model.Account;
-import org.academiadecodigo.firstapp.persistence.model.account.SavingsAccount;
 import org.academiadecodigo.firstapp.services.AccountService;
 import org.academiadecodigo.firstapp.services.CustomerService;
 
@@ -35,69 +30,4 @@ public class MockAccountService extends AbstractMockService<Account> implements 
         return modelMap.get(id);
     }
 
-    /**
-     * @see AccountService#deposit(Integer, Integer, double)
-     */
-    @Override
-    public void deposit(Integer id, Integer customerId, double amount)
-            throws CustomerNotFoundException, AccountNotFoundException, TransactionInvalidException {
-
-        Customer customer = Optional.ofNullable(customerService.get(customerId))
-                .orElseThrow(CustomerNotFoundException::new);
-
-        Account account = Optional.ofNullable(modelMap.get(id))
-                .orElseThrow(AccountNotFoundException::new);
-
-        if (!account.getCustomer().getId().equals(customerId)) {
-            throw new AccountNotFoundException();
-        }
-
-        if (!account.canCredit(amount)) {
-            throw new TransactionInvalidException();
-        }
-
-        for (Account a : customer.getAccounts()) {
-            if (a.getId().equals(id)) {
-                a.credit(amount);
-            }
-        }
-
-        account.credit(amount);
-    }
-
-    /**
-     * @see AccountService#withdraw(Integer, Integer, double)
-     */
-    @Override
-    public void withdraw(Integer id, Integer customerId, double amount)
-            throws CustomerNotFoundException, AccountNotFoundException, TransactionInvalidException {
-
-        Customer customer = Optional.ofNullable(customerService.get(customerId))
-                .orElseThrow(CustomerNotFoundException::new);
-
-        Account account = Optional.ofNullable(get(id))
-                .orElseThrow(AccountNotFoundException::new);
-
-        if (!account.getCustomer().getId().equals(customerId)) {
-            throw new AccountNotFoundException();
-        }
-
-        // in UI the user cannot click on Withdraw so this is here just for safety
-        if (account instanceof SavingsAccount) {
-            throw new TransactionInvalidException();
-        }
-
-        // make sure transaction can be performed
-        if (!account.canDebit(amount)) {
-            throw new TransactionInvalidException();
-        }
-
-        for (Account a : customer.getAccounts()) {
-            if (a.getId().equals(id)) {
-                a.debit(amount);
-            }
-        }
-
-        account.debit(amount);
-    }
 }
