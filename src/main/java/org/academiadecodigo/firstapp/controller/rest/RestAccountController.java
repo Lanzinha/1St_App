@@ -104,7 +104,7 @@ public class RestAccountController {
      * @return the response entity
      */
     @RequestMapping(method = RequestMethod.GET, path = "/{cid}/addiction/{aid}")
-    public ResponseEntity<AccountDto> showCustomerAccount(@PathVariable Integer cid, @PathVariable Integer aid) {
+    public ResponseEntity<AccountDto> showUserAddiction(@PathVariable Integer cid, @PathVariable Integer aid) {
 
         Account account = accountService.get(aid);
 

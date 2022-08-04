@@ -2,7 +2,6 @@ package org.academiadecodigo.firstapp.command;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import org.academiadecodigo.firstapp.persistence.model.Account;
-import org.academiadecodigo.firstapp.persistence.model.account.AccountType;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -17,9 +16,6 @@ public class AccountDto {
     public static final String moneyRegex = "^\\$?0*[1-9]\\d*(\\.\\d{0,2})?|\\d*(\\.0[1-9])|\\d*(\\.[1-9]\\d?)?$?";
 
     private Integer id;
-
-    @NotNull(message = "AccountType is mandatory")
-    private AccountType type;
 
     @Pattern(regexp = moneyRegex, message = "Amount is not valid")
     @NotNull(message = "Initial amount is mandatory")
@@ -62,32 +58,4 @@ public class AccountDto {
         this.balance = balance;
     }
 
-    /**
-     * Gets the type of the account DTO
-     *
-     * @return the account type
-     */
-    public AccountType getType() {
-        return type;
-    }
-
-    /**
-     * Sets the account DTO type
-     *
-     * @param type the account type to set
-     */
-    public void setType(AccountType type) {
-        this.type = type;
-    }
-
-    /**
-     * @see Object#toString()
-     */
-    @Override
-    public String toString() {
-        return "AccountDto{" +
-                ", type=" + type +
-                ", balance=" + balance +
-                '}';
-    }
 }
