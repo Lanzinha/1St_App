@@ -13,46 +13,61 @@ public class Account extends AbstractModel {
     private String name;
     private String suggestion;
     private String picUrl;
+    private String title;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
     private Customer customer;
 
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 
-    public void setName(String name) {this.name = name;}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getSuggestion() {return suggestion;}
+    public String getSuggestion() {
+        return suggestion;
+    }
 
-    public void setSuggestion(String suggestion) {this.suggestion = suggestion;}
+    public void setSuggestion(String suggestion) {
+        this.suggestion = suggestion;
+    }
 
-    public String getPicUrl() {return picUrl;}
+    public String getPicUrl() {
+        return picUrl;
+    }
 
-    public void setPicUrl(String picUrl) {this.picUrl = picUrl;}
+    public String getTitle() {
+        return title;
+    }
 
-    /**
-     * Gets the account costumer
-     *
-     * @return the customer
-     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPicUrl(String picUrl) {
+        this.picUrl = picUrl;
+    }
+
+
     public Customer getCustomer() {
         return customer;
     }
 
-    /**
-     * Sets the account costumer
-     *
-     * @param customer the customer to set
-     */
+
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
 
     @Override
     public String toString() {
 
         return "Account{" +
                 "name=" + name +
+                ", title=" + title +
                 ", suggestion=" + suggestion +
                 ", picUrl=" + picUrl +
                 ", userId=" + (customer != null ? customer.getId() : null) +

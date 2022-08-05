@@ -23,6 +23,11 @@ public class AccountDto {
     @Size(min = 3, max = 64)
     private String name;
 
+    @NotNull(message = "Name is mandatory")
+    @NotBlank(message = "Name is mandatory")
+    @Size(min = 3, max = 64)
+    private String title;
+
     @NotNull(message = "Suggestion is mandatory")
     @NotBlank(message = "Suggestion is mandatory")
     @Size(min = 3, max = 64)
@@ -32,6 +37,14 @@ public class AccountDto {
     @NotBlank(message = "Picture url is mandatory")
     @Size(min = 3, max = 64)
     private String picUrl;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     /**
      * Gets the id of the account DTO
@@ -89,6 +102,7 @@ public class AccountDto {
         return "AccountDto{" +
                 "id=" + id +
                 ", name=" + name +
+                ", title=" + title +
                 ", suggestion=" + suggestion +
                 ", picUrl=" + picUrl +
                 '}';

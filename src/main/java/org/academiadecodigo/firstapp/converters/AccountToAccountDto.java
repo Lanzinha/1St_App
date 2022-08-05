@@ -13,6 +13,7 @@ public class AccountToAccountDto extends AbstractConverter<Account, AccountDto> 
 
     /**
      * Converts the account model object into an account DTO
+     *
      * @param account the account
      * @return the account DTO
      */
@@ -24,6 +25,8 @@ public class AccountToAccountDto extends AbstractConverter<Account, AccountDto> 
         accountDto.setName(account.getName());
         accountDto.setSuggestion(account.getSuggestion());
         accountDto.setPicUrl(account.getPicUrl());
+        accountDto.setTitle(account.getTitle());
+
 
         return accountDto;
     }
