@@ -1,8 +1,8 @@
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/exceptions/TransactionInvalidException.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/converters/AccountToAccountDto.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/controller/rest/RestCustomerController.java
-/Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/services/mock/MockAccountService.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/persistence/model/Customer.java
+/Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/Main.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/exceptions/JavaBankException.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/services/mock/AbstractMockService.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/converters/AbstractConverter.java
@@ -17,7 +17,6 @@
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/interceptor/LogRequestsInterceptor.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/persistence/dao/jpa/GenericJpaDao.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/persistence/model/AbstractModel.java
-/Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/command/AccountTransactionDto.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/services/AccountService.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/persistence/dao/CustomerDao.java
 /Users/codecadet/Desktop/1st_App/1St_App/src/main/java/org/academiadecodigo/firstapp/exceptions/RecipientNotFoundException.java

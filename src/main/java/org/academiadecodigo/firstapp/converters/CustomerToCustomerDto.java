@@ -23,6 +23,7 @@ public class CustomerToCustomerDto extends AbstractConverter<Customer, CustomerD
         CustomerDto customerDto = new CustomerDto();
         customerDto.setId(customer.getId());
         customerDto.setName(customer.getName());
+        customerDto.setPass(customer.getPass());
         //customerDto.setEmail(customer.getEmail());
         //customerDto.setPhone(customer.getPhone());
 

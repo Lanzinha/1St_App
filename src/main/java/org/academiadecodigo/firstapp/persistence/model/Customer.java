@@ -44,11 +44,16 @@ public class Customer extends AbstractModel {
     /**
      * Sets the first name of the customer
      *
-     * @param firstName the name to set
+     * @param name the name to set
      */
-    public void setName(String firstName) {
-        this.name = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public String getPass() {return pass;}
+
+    public void setPass(String pass) {this.pass = pass;}
+
 /*
 
     */
@@ -101,9 +106,7 @@ public class Customer extends AbstractModel {
      *
      * @return the accounts
      */
-    public List<Account> getAccounts() {
-        return accounts;
-    }
+    public List<Account> getAccounts() {return accounts;}
 
     /**
      * Adds a new account to the customer
@@ -123,6 +126,15 @@ public class Customer extends AbstractModel {
     public void removeAccount(Account account) {
         accounts.remove(account);
         account.setCustomer(null);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", pass='" + pass + '\'' +
+                "accounts" + accounts +
+                "} " + super.toString();
     }
 
 }

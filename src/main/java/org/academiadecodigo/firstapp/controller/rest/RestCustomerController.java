@@ -113,7 +113,7 @@ public class RestCustomerController {
         Customer savedCustomer = customerService.save(customerDtoToCustomer.convert(customerDto));
 
         // get help from the framework building the path for the newly created resource
-        UriComponents uriComponents = uriComponentsBuilder.path("/api/customer/" + savedCustomer.getId()).build();
+        UriComponents uriComponents = uriComponentsBuilder.path("/api/user/" + savedCustomer.getId()).build();
 
         // set headers with the created path
         HttpHeaders headers = new HttpHeaders();

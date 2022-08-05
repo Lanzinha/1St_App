@@ -21,6 +21,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -87,11 +88,19 @@ public class RestAccountController {
 
         Customer customer = customerService.get(cid);
 
+        //System.out.println("coco");
+
         if (customer == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        List<AccountDto> accountDtos = customer.getAccounts().stream().map(account -> accountToAccountDto.convert(account)).collect(Collectors.toList());
+        //System.out.println(customer);
+
+        List<AccountDto> accountDtos = customer.getAccounts().stream()
+                .map(account -> accountToAccountDto.convert(account))
+                .collect(Collectors.toList());
+
+        //accountDtos.forEach(System.out::println);
 
         return new ResponseEntity<>(accountDtos, HttpStatus.OK);
     }

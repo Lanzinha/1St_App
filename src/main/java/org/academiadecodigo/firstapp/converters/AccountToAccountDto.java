@@ -21,6 +21,9 @@ public class AccountToAccountDto extends AbstractConverter<Account, AccountDto> 
 
         AccountDto accountDto = new AccountDto();
         accountDto.setId(account.getId());
+        accountDto.setName(account.getName());
+        accountDto.setSuggestion(account.getSuggestion());
+        accountDto.setPicUrl(account.getPicUrl());
 
         return accountDto;
     }

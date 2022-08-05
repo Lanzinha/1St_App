@@ -16,8 +16,13 @@ public class CustomerDto {
     @Size(min = 3, max = 64)
     private String name;
 
+    @NotNull(message = "Pass is mandatory")
+    @NotBlank(message = "Pass is mandatory")
+    @Size(min = 3, max = 64)
+    private String pass;
 
-/*    @Email
+
+    /*    @Email
     @NotBlank(message = "Email is mandatory")
     private String email;
 
@@ -61,6 +66,9 @@ public class CustomerDto {
         this.name = name;
     }
 
+    public String getPass() {return pass;}
+
+    public void setPass(String pass) {this.pass = pass;}
 /*    *//**
      * Gets the email of the customer DTO
      *
@@ -105,6 +113,7 @@ public class CustomerDto {
         return "CustomerForm{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", pass='" + pass + '\'' +
                 '}';
     }
 }

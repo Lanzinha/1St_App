@@ -1,17 +1,13 @@
 package org.academiadecodigo.firstapp.services;
 
-import org.academiadecodigo.firstapp.exceptions.AccountNotFoundException;
-import org.academiadecodigo.firstapp.exceptions.CustomerNotFoundException;
-import org.academiadecodigo.firstapp.exceptions.TransactionInvalidException;
+
 import org.academiadecodigo.firstapp.persistence.dao.AccountDao;
 import org.academiadecodigo.firstapp.persistence.dao.CustomerDao;
-import org.academiadecodigo.firstapp.persistence.model.Customer;
 import org.academiadecodigo.firstapp.persistence.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
+import java.util.List;
 
 /**
  * An {@link AccountService} implementation
@@ -50,5 +46,8 @@ public class AccountServiceImpl implements AccountService {
         return accountDao.findById(id);
     }
 
+    public List<Account> findAll() {
+        return accountDao.findAll();
+    }
 
 }
